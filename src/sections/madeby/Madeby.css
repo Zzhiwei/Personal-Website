@@ -1,0 +1,29 @@
+.madeby {
+    min-height: 7rem;
+    background: black;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2rem;
+}
+
+.madeby i {
+    display: inline;
+    color: white;
+    margin-inline: 5px;
+    font-size: 1.7rem;
+}
+
+.madeby span {
+    color: var(--primary);
+    display: inline-block;
+    margin-inline: 5px;
+}
+
+@media (max-width: 491px) {
+    .madeby .wrapper {
+        transform: scale(0.6);
+    }
+}

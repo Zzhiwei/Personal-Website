@@ -1,0 +1,160 @@
+
+
+.contact .left {
+    display: flex;
+    justify-content: center;
+}
+
+.contact .helloImg {
+    width: 90%;
+    height: 35rem;
+    background: url(../../assets/telephone.jpeg) no-repeat center;
+    background-size: cover;
+    border-radius: 2rem;
+    
+    
+    
+}
+
+.contact img {
+    width: 90%;
+    height: 35rem;
+    object-fit: cover;
+    border-radius: 2rem;
+
+}
+
+.contact .column {
+    width: 50%;
+}
+
+/* form */
+
+.contact .formTitle {
+    font-size: 3rem;
+    font-family: 'ubuntu', sans-serif;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+
+
+.contact .formRow {
+    display: flex;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    justify-content: space-between;
+}
+
+
+
+
+.contact .formRow input[placeholder="Name"],
+.contact .formRow input[placeholder="Email"] {
+    width: 49%;
+}
+
+
+
+.contact input {
+    height: 4.5rem;
+    padding-inline: 1rem;
+    border-radius: 0.5rem;
+
+}
+
+.contact textArea {
+    padding: 1.5rem;
+    resize: none;
+    border-radius: 0.5rem;
+}
+
+.contact input,
+.contact textArea {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 1.7rem;
+    border: 1px solid lightgrey;
+    outline: none;
+}
+
+.contact input:focus,
+.contact textArea:focus {
+    border-color: var(--primary);
+}
+
+.contact form button {
+    border: none;
+    padding: 8px 20px;
+    border-radius: 6px;
+    font-size: 24px;
+    font-weight: 500;
+    color: white;
+    display: inline-block;
+    background: black;
+    transition: all 0.3s ease;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.contact form button:hover {
+    background: var(--primary);
+    color: white;
+}
+
+@media (max-width: 1219px) {
+    .contact img {
+        width: 90%;
+    }
+
+    .contact .right {
+        width: 45%
+    }
+
+    .contact .left {
+        width: 55%
+    }
+}
+
+@media (max-width: 950px) {
+    .contact .column {
+        width: 100%;
+    }
+
+    
+
+    .contact .left {
+        margin-bottom: 4rem;
+    }
+
+    .contact .sectionBody {
+        justify-content: center;
+    }
+
+    
+
+}
+
+@media (max-width: 569px) {
+    .contact .max-width {
+        padding-inline: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .contact img {
+        height: 25rem;
+    }
+}
+
+
+@media (max-width: 390px) {
+    .contact img {
+        height: 20rem;
+    }
+}
+
+
+

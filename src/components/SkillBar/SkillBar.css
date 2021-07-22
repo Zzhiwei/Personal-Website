@@ -1,0 +1,24 @@
+.skillBar {
+    height: 9rem;
+    width: 100%;
+    display: flex;
+    margin-block: 0.3rem;
+}
+
+.skillBar .barRight {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+
+.skillBar .skillName {
+    font-size: 1.9rem;
+    font-family: 'ubuntu', sans-serif;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+
+

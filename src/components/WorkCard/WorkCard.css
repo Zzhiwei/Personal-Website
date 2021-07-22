@@ -1,0 +1,46 @@
+.workCard {
+    height: 26rem;
+    width: 30rem;
+    color: white;
+    display: inline-block;
+    /* padding: 10px; */
+    background: #222;
+    overflow: hidden;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'ubuntu', sans-serif;
+}
+
+.zoomable {
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.workCard:hover .zoomable {
+    transform: scale(1.05);
+}
+
+.workCard .text {
+    padding-inline: 1rem;
+}
+
+.workCard img {
+    height: 60%;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.workCard .title {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.workCard .description {
+    font-size: 1.3rem;
+    line-height: 2rem;
+    margin-bottom: 0.5rem;
+}

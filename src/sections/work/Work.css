@@ -1,0 +1,79 @@
+
+
+.work {
+    background: url(../../assets/workbg.png) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    max-height: 1300px;
+    min-height: 600px;
+    color: white;
+    font-family: 'ubuntu', sans-serif;
+}
+
+.work .max-width {
+    position: relative;
+}
+
+.work .sectionBody {
+    
+    display: block;
+}
+
+
+
+
+
+.work .carousell {
+    width: 500rem;
+
+}
+
+/* carousell */
+
+.rec.rec-arrow.rec {
+    color: white;
+    font-size: 3rem;
+    background: #222;
+    width: 5rem;
+    height: 5rem;
+}
+
+.rec.rec-arrow.rec:hover {
+    background: white;
+    color: black;
+}
+
+.rec.rec-arrow.rec:focus {
+    background: var(--primary);
+    color: black;
+}
+
+
+.rec.rec-dot.rec.rec-dot_active {
+    background: white;
+    box-shadow: 0 0 1px 3px var(--primary);
+}
+
+.rec.rec-dot {
+    background: white;
+}
+
+@media (max-width: 535px) {
+    .rec.rec-carousel-wrapper {
+        transform: scale(0.9);
+    }
+
+    .work .max-width {
+        padding: 0;
+    }
+
+    .rec.rec-arrow.rec {
+        background: red;
+        min-height: 0;
+        min-width: 0;
+        background: black;
+        box-shadow: none;
+
+    }
+    
+}

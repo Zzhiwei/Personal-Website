@@ -1,0 +1,46 @@
+.home {
+    height: 100vh;
+    font-family: 'Ubuntu', sans-serif;
+    min-height: 600px;
+    background: url(../../assets/homebg.png) no-repeat center;
+    display: flex;
+    background-size: cover;
+    background-attachment: fixed;
+    justify-content: center;
+    
+
+}
+
+.home .max-width {
+    display: flex;
+    margin-block: auto;
+    margin-inline: 0;
+    width: 100%;
+}
+
+
+.home .left {
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.home .text1 {
+    font-size: 36px;
+}
+
+.home .text2 {
+    font-size: 96px;
+    transform: skew(-15deg);
+
+}
+
+.home .text3 {
+    font-size: 42px;
+}
+
+.home .text3 span {
+    color: var(--primary);
+}
+
