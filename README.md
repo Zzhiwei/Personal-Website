@@ -1,7 +1,7 @@
 # Personal Website
 
 This is the source code for my personal website, written with react and styled mainly with CSS only. It was also designed with Figma.
-The link to website will be published shortly.
+The link to website will be published shortly. It was fun doing this and definitely learnt a lot about design, looking forward to more web projects in the future :)!
 
 # Getting Started with Create React App
 
