@@ -1,4 +1,4 @@
-#Personal Website
+# Personal Website
 
 This is the source code for my personal website, written with react and styled mainly with CSS only. It was also designed with Figma.
 The link to website will be published shortly.
