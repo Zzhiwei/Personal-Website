@@ -38,7 +38,6 @@
 }
 
 
-
 .contact .formRow {
     display: flex;
     width: 100%;
@@ -46,14 +45,10 @@
     justify-content: space-between;
 }
 
-
-
-
 .contact .formRow input[placeholder="Name"],
 .contact .formRow input[placeholder="Email"] {
     width: 49%;
 }
-
 
 
 .contact input {
@@ -99,10 +94,85 @@
     cursor: pointer;
 }
 
+.contact form button:disabled {
+    color: #554f4f;
+    background: #d8d8d8;
+
+}
+
+.contact form button:disabled:hover {
+    background: #d8d8d8;
+    color: #554f4f;
+    cursor: default;
+
+}
+
 .contact form button:hover {
     background: var(--primary);
     color: white;
 }
+
+
+/* bouncing balls */
+
+.contact .bouncers {
+    width: 50px;
+    align-self: flex-start;
+    margin-left: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contact .bouncers div {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    background: black;
+    border-radius: 50%;
+    animation: bounce 0.5s ease-in infinite alternate;
+}
+
+.contact .bouncers div:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.contact .bouncers div:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.contact .bouncers div:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+@keyframes bounce {
+    from { transform: translateY(0);}
+    to { transform: translateY(39px);}
+}
+
+/* success message */
+
+.contact  .successText {
+    align-self: center;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-left: 15px;
+    color: var(--primary);
+
+}
+
+.contact .failure {
+    align-self: center;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    margin-left: 15px;
+    color: crimson;
+}
+
+
+
+
 
 @media (max-width: 1219px) {
     .contact img {

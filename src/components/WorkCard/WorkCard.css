@@ -1,5 +1,5 @@
 .workCard {
-    height: 26rem;
+    height: 28rem;
     width: 30rem;
     color: white;
     display: inline-block;
@@ -24,6 +24,7 @@
 
 .workCard .text {
     padding-inline: 1rem;
+    
 }
 
 .workCard img {

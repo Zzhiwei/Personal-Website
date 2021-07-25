@@ -143,3 +143,9 @@
     
 }
 
+
+@media (max-width: 569px) {
+    .navbar .max-width {
+        padding-inline: 20px;
+    }
+}

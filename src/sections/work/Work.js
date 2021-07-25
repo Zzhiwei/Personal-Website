@@ -4,16 +4,22 @@ import './Work.css'
 import { Card, Page, ScrollRef } from './Work.style'
 import { useInView } from 'react-intersection-observer'
 import Carousel from 'react-elastic-carousel';
-import work1 from '../../assets/work1.jpeg'
-import work2 from '../../assets/work2.jpeg'
-import work3 from '../../assets/work3.jpeg'
-import work4 from '../../assets/work4.jpeg'
+import work1 from '../../assets/work1.png'
+import work2 from '../../assets/work2.png'
+import work3 from '../../assets/work3.png'
+import comingsoon from '../../assets/comingsoon.png'
+
+
 
 
 
 
 export default function Work() {
     const [itemsToShow, setitemsToShow] = useState()
+    const orbital = ["partnerUp", "A fullstack project built with react, firebase and material UI, for NUS project orbital, aimed at helping students find project partners"]
+    const hawkerhero = ["HawkerHero", "A react native app built for CODE_EXP hackathon aimed at helping hawkers hit financially by the pandemic"]
+    const portfolio = ["Personal website", "A porfolio website styled with css"]
+    const fillerText = ["Coming soon", "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis similique, nobis laboriosam mollitia officiis omnis sint?"]
     
     useEffect(() => {
         const BR2STR = "(max-width: 1263px)"
@@ -50,18 +56,21 @@ export default function Work() {
         <section className="work" id="work">
             <div className="max-width">
                 <div className="sectionHeader">
-                    My Work
+                    My Work 
                 </div>
                 <div className="sectionBody">
                     <Carousel itemsToShow={itemsToShow}>
-                        <WorkCard  image={work1}/>
-                        <WorkCard  image={work2}/>
-                        <WorkCard  image={work3}/>
-                        <WorkCard  image={work4}/>
-                        <WorkCard  image={work1}/>
-                        <WorkCard  image={work2}/>
-                        <WorkCard  image={work3}/>
-                        <WorkCard  image={work4}/>
+                        <a href="https://orbital-teamtams-partnerup.herokuapp.com/home" target="_blank">
+                            <WorkCard  image={work1} title={orbital[0]} description={orbital[1]} />
+                        </a>
+                        <a href="https://github.com/softmagnet/HawkerHero" target="_blank">
+                            <WorkCard  image={work2} title={hawkerhero[0]} description={hawkerhero[1]}/>
+                        </a>
+                        <a href="#">
+                            <WorkCard  image={work3} title={portfolio[0]} description={portfolio[1]} />
+                        </a>
+                        <WorkCard  image={comingsoon} title={fillerText[0]} description={fillerText[1]} />
+                        <WorkCard  image={comingsoon} title={fillerText[0]} description={fillerText[1]} />
                     </Carousel>
                 </div>
             </div>

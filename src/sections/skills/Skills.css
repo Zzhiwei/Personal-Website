@@ -36,7 +36,7 @@
 
 @media (max-width: 500px) {
     .skills .max-width {
-        padding-inline: 0;
+        padding-inline: 5px;
     }
     .skills .left {
         width: calc(95%);
@@ -46,7 +46,7 @@
         width: calc(95%);
     }
 
-    Skillbar {
+    .Skillbar {
         transform: scale(0.8);
     }
 }

@@ -8,8 +8,8 @@ export default function WorkCard({ image, title, description }) {
             <div className="zoomable">
                 <img src={image} />
                 <div className="text">
-                    <div className="title">Project Orbital</div>
-                    <div className="description">This is a react project done for orbital in NUS during the summer holidays. A project to help</div>
+                    <div className="title">{title}</div>
+                    <div className="description">{description}</div>
                 </div>
             </div>
             
