@@ -23,7 +23,6 @@ export default function Contact() {
     
     const [buttonSideState, setButtonSideState] = useState(0)
     const [messageObj, setMessageObj] = useState(defaultMessage)
-    console.log("rerendeds")
 
     function handleChange(e, target) {
         if (buttonSideState === 2) {
@@ -71,7 +70,6 @@ export default function Contact() {
                 setButtonSideState(2)
                 
             } catch (e) {
-                console.log(e)
                 setButtonSideState(3)
             }
         }
