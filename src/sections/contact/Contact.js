@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import './Contact.css'
 import tele from '../../assets/telephone.jpeg'
 import { db } from '../../firebase'
-import firebase from 'firebase'
+import firebase from 'firebase/app'
 
  
 export default function Contact() {
