@@ -13,7 +13,7 @@ export default function About() {
                 </div>
                 <div className="sectionBody">
                     <div className="column left">
-                        <img src={profilePic} />
+                        <img src={profilePic} alt=""/>
                     </div>
                     <div className="column right">
                         <div className="text1"> I am a <span>developer</span></div>
@@ -21,15 +21,12 @@ export default function About() {
                             <span> computer science</span>. I love doing <span>web development</span>, both design and implementation. My dream is to have my own products in the future.</p>
                         <p className="moreAbout">more about me on:</p>                            
                         <div className="text3"></div>
-                        {/* <a href="#" className="button">
-                            Download CV
-                        </a> */}
                         <div className="icons">
-                                <a href="https://github.com/softmagnet" target="_blank" className="github">
-                                    <img src={githubIcon} />
+                                <a href="https://github.com/softmagnet" target="_blank" rel="noreferrer" className="github">
+                                    <img src={githubIcon} alt=""/>
                                 </a>  
-                                <a href="https://www.linkedin.com/in/zhiwei-lin-6b579b183/" target="_blank" className="linkedin">
-                                     <img src={linkedinIcon} />
+                                <a href="https://www.linkedin.com/in/zhiwei-lin-6b579b183/" target="_blank" rel="noreferrer" className="linkedin">
+                                     <img src={linkedinIcon} alt=""/>
                                 </a>  
                         </div>
                     </div>

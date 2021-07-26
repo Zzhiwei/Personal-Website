@@ -40,10 +40,10 @@ export default function Navbar() {
         <div className={`navbar ${navColor}`} >
             <div className="max-width">
                 <div className="logo">
-                    <a href="#">MyPorfo<span>lio_</span></a>
+                    <a href="#home">MyPorfo<span>lio_</span></a>
                 </div>
                 <ul className={`menu ${menuOpen ? 'active' : ''}`}>
-                    <li><a onClick={handleMenuClick} href="#">Home</a></li>
+                    <li><a onClick={handleMenuClick} href="#home">Home</a></li>
                     <li><a onClick={handleMenuClick} href="#about">About</a></li>
                     <li><a onClick={handleMenuClick} href="#skills">Skills</a></li>
                     <li><a onClick={handleMenuClick} href="#work">Work</a></li>

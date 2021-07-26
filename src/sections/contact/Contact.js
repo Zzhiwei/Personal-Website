@@ -54,6 +54,9 @@ export default function Contact() {
                   ...messageObj,
                   message: e.target.value
               })
+              break;
+            default:
+
         }
     }
     
@@ -85,7 +88,7 @@ export default function Contact() {
                 </div>
                 <div className="sectionBody">
                     <div className="column left">
-                        <img src={tele} />
+                        <img src={tele} alt=""/>
                     </div>
                     <div className="column right">
                         <form action="" onSubmit={handleSubmit}>

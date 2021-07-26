@@ -1,8 +1,6 @@
-import React, { useEffect, useRef, useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import WorkCard from '../../components/WorkCard/WorkCard'
 import './Work.css'
-import { Card, Page, ScrollRef } from './Work.style'
-import { useInView } from 'react-intersection-observer'
 import Carousel from 'react-elastic-carousel';
 import work1 from '../../assets/work1.png'
 import work2 from '../../assets/work2.png'
@@ -60,13 +58,13 @@ export default function Work() {
                 </div>
                 <div className="sectionBody">
                     <Carousel itemsToShow={itemsToShow}>
-                        <a href="https://orbital-teamtams-partnerup.herokuapp.com/home" target="_blank">
+                        <a href="https://orbital-teamtams-partnerup.herokuapp.com/home" target="_blank" rel="noreferrer">
                             <WorkCard  image={work1} title={orbital[0]} description={orbital[1]} />
                         </a>
-                        <a href="https://github.com/softmagnet/HawkerHero" target="_blank">
+                        <a href="https://github.com/softmagnet/HawkerHero" target="_blank" rel="noreferrer">
                             <WorkCard  image={work2} title={hawkerhero[0]} description={hawkerhero[1]}/>
                         </a>
-                        <a href="#">
+                        <a href="#home">
                             <WorkCard  image={work3} title={portfolio[0]} description={portfolio[1]} />
                         </a>
                         <WorkCard  image={comingsoon} title={fillerText[0]} description={fillerText[1]} />
