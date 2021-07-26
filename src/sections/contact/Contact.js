@@ -124,7 +124,7 @@ export default function Contact() {
                                 <textarea
                                     cols="30"
                                     rows="5"
-                                    placeholder="your message"
+                                    placeholder="Your message"
                                     required
                                     value={messageObj.message}
                                     onChange={e => handleChange(e, 3)}

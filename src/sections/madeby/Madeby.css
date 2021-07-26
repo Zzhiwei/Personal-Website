@@ -22,7 +22,7 @@
     margin-inline: 5px;
 }
 
-@media (max-width: 491px) {
+@media (max-width: 650px) {
     .madeby .wrapper {
         transform: scale(0.6);
     }
