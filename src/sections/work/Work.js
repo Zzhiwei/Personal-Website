@@ -6,6 +6,9 @@ import work1 from '../../assets/work1.png'
 import work2 from '../../assets/work2.png'
 import work3 from '../../assets/work3.png'
 import comingsoon from '../../assets/comingsoon.png'
+import calc from '../../assets/calc.png'
+import sunnyside from '../../assets/sunnyside.png'
+
 
 
 
@@ -18,6 +21,8 @@ export default function Work() {
     const hawkerhero = ["HawkerHero", "A react native app built for CODE_EXP hackathon aimed at helping hawkers hit financially by the pandemic"]
     const portfolio = ["Personal website", "A porfolio website styled with css"]
     const fillerText = ["Coming soon", "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis similique, nobis laboriosam mollitia officiis omnis sint?"]
+    const sunnysideText = ["Sunnyside", "A frontend mentor Challenge."]
+    const calcText = ["Calculator", "A calculator with switchable themes. A frontend mentor Challenge."]
     
     useEffect(() => {
         const BR2STR = "(max-width: 1263px)"
@@ -61,14 +66,19 @@ export default function Work() {
                         <a href="https://orbital-teamtams-partnerup.herokuapp.com/home" target="_blank" rel="noreferrer">
                             <WorkCard  image={work1} title={orbital[0]} description={orbital[1]} />
                         </a>
+                        <a href="https://calculator-zhiwei.netlify.app/" target="_blank" rel="noreferrer">
+                            <WorkCard  image={calc} title={calcText[0]} description={calcText[1]} />
+                        </a>
+                        <a href="https://sunnyside-zhiwei.netlify.app/" target="_blank" rel="noreferrer">
+                            <WorkCard  image={sunnyside} title={sunnysideText[0]} description={sunnysideText[1]} />
+                        </a>
                         <a href="https://github.com/softmagnet/HawkerHero" target="_blank" rel="noreferrer">
                             <WorkCard  image={work2} title={hawkerhero[0]} description={hawkerhero[1]}/>
                         </a>
                         <a href="#home">
                             <WorkCard  image={work3} title={portfolio[0]} description={portfolio[1]} />
                         </a>
-                        <WorkCard  image={comingsoon} title={fillerText[0]} description={fillerText[1]} />
-                        <WorkCard  image={comingsoon} title={fillerText[0]} description={fillerText[1]} />
+                        
                     </Carousel>
                 </div>
             </div>
