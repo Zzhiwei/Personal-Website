@@ -9,17 +9,25 @@ import HTMLIcon from '../../assets/html.png'
 import JavaIcon from '../../assets/java.svg'
 import materialIcon from '../../assets/material_ui.png'
 import FigmaIcon from '../../assets/figma.svg'
+import { useInView } from 'react-intersection-observer';
+import getClass from '../../utils/GetClass'
 
 
 
 export default function Skills() {
+
+    const { ref, inView, entry } = useInView({
+        threshold: 0.1,
+        triggerOnce: true,
+    });
+
     return (
         <section className="skills" id="skills">
             <div className="max-width">
                 <div className="sectionHeader">
                     Skills
                 </div>
-                <div className="sectionBody">
+                <div ref={ref} className={getClass("sectionBody", inView)}>
                     <div className="column left">
                         <SkillBar
                             skillName="React"

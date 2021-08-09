@@ -8,6 +8,8 @@ import work3 from '../../assets/work3.png'
 import comingsoon from '../../assets/comingsoon.png'
 import calc from '../../assets/calc.png'
 import sunnyside from '../../assets/sunnyside.png'
+import { useInView } from 'react-intersection-observer';
+import getClass from '../../utils/GetClass'
 
 
 
@@ -23,6 +25,10 @@ export default function Work() {
     const fillerText = ["Coming soon", "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis similique, nobis laboriosam mollitia officiis omnis sint?"]
     const sunnysideText = ["Sunnyside", "A frontend mentor Challenge."]
     const calcText = ["Calculator", "A calculator with switchable themes. A frontend mentor Challenge."]
+    const { ref, inView, entry } = useInView({
+        threshold: 0.2,
+        triggerOnce: true,
+    });
     
     useEffect(() => {
         const BR2STR = "(max-width: 1263px)"
@@ -61,7 +67,7 @@ export default function Work() {
                 <div className="sectionHeader">
                     My Work 
                 </div>
-                <div className="sectionBody">
+                <div ref={ref} className={getClass("sectionBody", inView)}>
                     <Carousel itemsToShow={itemsToShow}>
                         <a href="https://orbital-teamtams-partnerup.herokuapp.com/home" target="_blank" rel="noreferrer">
                             <WorkCard  image={work1} title={orbital[0]} description={orbital[1]} />
