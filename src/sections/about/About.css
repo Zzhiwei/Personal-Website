@@ -19,10 +19,19 @@
 /* right */
 
 
-.about .right {
+.about .sectionBody .right {
     font-family: 'Poppins', sans-serif;
     width: 55%;
+    transform: translateX(10%);
+    opacity: 0;
+    transition: transform 500ms ease, opacity 250ms ease;
 }
+
+.about .sectionBody.appear .right {
+    transform: translateX(0);
+    opacity: 1;
+}
+
 
 .about .text1 {
     font-size: 36px;
@@ -84,11 +93,21 @@
 
 
 /* left */
-.about .left {
+.about .sectionBody .left {
     width: 45%;
     display: flex;
     justify-content: center;
+    transform: translateX(-10%);
+    opacity: 0;
+    transition: transform 400ms ease, opacity 250ms ease;
 }
+
+.about .sectionBody.appear .left {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+
 
 
 .about .left img {
@@ -132,10 +151,10 @@
 }
 
 @media (max-width: 950px) {
-    .about .right {
+    .about .sectionBody .right {
         width: 100%;
     }
-    .about .left {
+    .about .sectionBody .left {
         width: 100%;
         margin-bottom: 50px;
     }

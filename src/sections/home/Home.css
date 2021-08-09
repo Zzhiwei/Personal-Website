@@ -22,7 +22,15 @@
 .home .left {
     display: flex;
     flex-direction: column;
-    
+    transform: scale(0);
+    opacity: 0;
+    transition: transform 1000ms ease, opacity 700ms ease;
+}
+
+.home .left.appear {
+    transform: scale(1);
+    opacity: 1;
+
 
 }
 

@@ -17,6 +17,16 @@
 .work .sectionBody {
     
     display: block;
+    transform: translateY(10%);
+    opacity: 0;
+    transition: transform 1000ms ease, opacity 250ms ease;
+}
+
+.work .sectionBody.appear {
+    opacity: 1;
+    transform: translateY(0);
+
+
 }
 
 
