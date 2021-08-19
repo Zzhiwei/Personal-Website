@@ -10,6 +10,7 @@ import calc from '../../assets/calc.png'
 import sunnyside from '../../assets/sunnyside.png'
 import { useInView } from 'react-intersection-observer';
 import getClass from '../../utils/GetClass'
+import room from '../../assets/room.png'
 
 
 
@@ -22,9 +23,9 @@ export default function Work() {
     const orbital = ["partnerUp", "A fullstack project built with react, firebase and material UI, for NUS project orbital, aimed at helping students find project partners"]
     const hawkerhero = ["HawkerHero", "A react native app built for CODE_EXP hackathon aimed at helping hawkers hit financially by the pandemic"]
     const portfolio = ["Personal website", "A porfolio website styled with css"]
-    const fillerText = ["Coming soon", "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis similique, nobis laboriosam mollitia officiis omnis sint?"]
     const sunnysideText = ["Sunnyside", "A frontend mentor Challenge."]
     const calcText = ["Calculator", "A calculator with switchable themes. A frontend mentor Challenge."]
+    const roomText = ["Room", "A landing page with text and image carousell built with vanilla JavaScript. A frontend mentor challenge."]
     const { ref, inView, entry } = useInView({
         threshold: 0.2,
         triggerOnce: true,
@@ -71,6 +72,9 @@ export default function Work() {
                     <Carousel itemsToShow={itemsToShow}>
                         <a href="https://orbital-teamtams-partnerup.herokuapp.com/home" target="_blank" rel="noreferrer">
                             <WorkCard  image={work1} title={orbital[0]} description={orbital[1]} />
+                        </a>
+                        <a href="https://room-zhiwei.netlify.app/" target="_blank" rel="noreferrer">
+                            <WorkCard  image={room} title={roomText[0]} description={roomText[1]} />
                         </a>
                         <a href="https://calculator-zhiwei.netlify.app/" target="_blank" rel="noreferrer">
                             <WorkCard  image={calc} title={calcText[0]} description={calcText[1]} />
