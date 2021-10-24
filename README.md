@@ -1,6 +1,7 @@
 # Personal Website
 
-This is the source code for a simple personal website for myself, written with react and styled with vanilla CSS. It was also designed with Figma.
+This is the source code for a simple personal website for myself, written with react and styled with vanilla CSS. It was also designed with Figma. 
+When i built this i had no knowledge of accessibility, so everything is done with divs.
 
 # Link
 
