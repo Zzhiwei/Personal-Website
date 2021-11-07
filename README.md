@@ -1,7 +1,7 @@
 # Personal Website
 
 This is the source code for a simple personal website for myself, written with react and styled with vanilla CSS. It was also designed with Figma. 
-Everything is written with div tag cos i had zero knowledge of accessibility when i built this.
+Everything is written with div tag because i had zero knowledge of accessibility when i built this.
 
 # Link
 
